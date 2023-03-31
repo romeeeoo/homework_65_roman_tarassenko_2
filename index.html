@@ -9,6 +9,7 @@
 <!--task#1-->
 <script type="application/javascript">
     let drinks = ['milk', 'beer', 'beer', 'milk', 'milk']
+    console.log("task#1")
     for (let i = 0; i < drinks.length; i++) {
         if (drinks[i] === 'milk') {
             console.log("good");
@@ -18,6 +19,22 @@
     }
 </script>
 
+<!--task#2-->
+<script type="application/javascript">
+    let firstArray = [1, 5, 12, 4, 3]
+    let secondArray = [2, 3, 4, 5, 6, 7, 8, 9, 10]
+    let thirdArray = [3, 10, 17]
+
+    function getAvg(anyArray) {
+        let sum = anyArray.reduce((total, value) => total + value, 0);
+        let avg = sum / anyArray.length
+        return console.log(avg)
+    }
+    console.log("task#2")
+    getAvg(firstArray);
+    getAvg(secondArray);
+    getAvg(thirdArray);
+</script>
 
 </body>
 </html>
